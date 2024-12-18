@@ -9,7 +9,8 @@
 /coverage
 
 # production
-
+# Ignorar la carpeta build generada por React
+client/build
 
 # misc
 .DS_Store
