@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nodemon server --watch server",
     "debug": "nodemon --inspect server --watch server",
-    "install-client": "npm install --prefix client",
-    "build": "npm run build --prefix client",
+    "build": "npm install --prefix client && npm run build --prefix client || echo 'Error en la construcción del cliente.'",
     "start": "node server"
   },
   "keywords": [],
