@@ -12,9 +12,9 @@ export const createPostRequest = async (post) => {
   for (let key in post) {
     form.append(key, post[key]);
   }
-  return await axios.post("/api/posts", form, {
+  return await axios.post("https://mern-context-crud.vercel.app/api/posts", post, {
     headers: {
-      "Content-Type": "multipart/form-data",
+      "Content-Type": "application/json",
     },
   });
 };
@@ -26,7 +26,7 @@ export const updatePostRequest = async (id, newPostFields) => {
   }
   return axios.put("/api/posts/" + id, form, {
     headers: {
-      "Content-Type": "multipart/form-data",
+      "Content-Type": "application/json",
     },
   });
 };
