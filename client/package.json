@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^14.1.0",
     "axios": "^0.26.1",
     "formik": "^2.2.9",
+    "mern-context": "file:..",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-hot-toast": "^2.2.0",
