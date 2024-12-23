@@ -12,7 +12,7 @@ export const createPostRequest = async (post) => {
   for (let key in post) {
     form.append(key, post[key]);
   }
-  return await axios.post("https://mern-context-crud.vercel.app/api/posts", post, {
+  return await axios.post("https://mern-context-crud.vercel.app/api/new", post, {
     headers: {
       "Content-Type": "application/json",
     },
