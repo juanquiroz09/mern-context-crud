@@ -25,7 +25,7 @@ export function HomePage() {
   };
 
   return (
-    <main>
+    <div className="text-white">
       <header className="flex justify-between items-center my-4">
         <h1 className="text-2xl text-gray-300 font-bold">
           Posts ({posts.length})
@@ -39,6 +39,6 @@ export function HomePage() {
       </header>
 
       {renderMain()}
-    </main>
+    </div>
   );
 }
