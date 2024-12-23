@@ -7,7 +7,7 @@ export function HomePage() {
   const { posts } = usePosts();
 
   const renderMain = () => {
-    if (posts.length === 0)
+    if (!Array.isArray(posts) || posts.length === 0)
       return (
         <div className="flex flex-col justify-center items-center">
           <VscEmptyWindow className="w-48 h-48 text-white" />
